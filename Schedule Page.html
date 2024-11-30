@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+      <element :hover>
+      <div class="profile">
+        <div class="avatar"></div>
+        <div class="profile-info">
+          <p class="name">Marcus S.</p>
+          <p class="email">Marcususalopaso@gmail.com</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li class="active">Find</li>
+          <li class="active">Schedule</li>
+          <li class="active">Settings</li>
+        </ul>
+      </nav>
+      <!--  my schedules part toh -->
+        <h3>My Schedules</h3>
+      <div class="schedules">
+        <ul>
+          <li>May 1, Scheduled for a meeting with User1</li>
+          <li>May 2, Scheduled for a meeting with User2</li>
+          <li>May 3, Scheduled for a meeting with User3</li>
+        </ul>
+      </div>
+    </element>
+    </aside>
+
+    <!--  Calendar Section -->
+    <main>
+      <header>
+        <h1>My Schedules</h1>
+      </header>
+      <div class="calendar">
+        <div class="calendar-header">
+           <!--  left button -->
+          <button id="prev-month">&lt;</button>
+          <h2 id="current-month"></h2>
+           <!--  right button -->
+          <button id="next-month">&gt;</button>
+          <div class="view-options">
+             <!--  drop down button para sa months  -->
+            <button id="month-button">Month</button>
+            <ul id="month-dropdown" class="hidden">
+              <li data-month="0">January</li>
+              <li data-month="1">February</li>
+              <li data-month="2">March</li>
+              <li data-month="3">April</li>
+              <li data-month="4">May</li>
+              <li data-month="5">June</li>
+              <li data-month="6">July</li>
+              <li data-month="7">August</li>
+              <li data-month="8">September</li>
+              <li data-month="9">October</li>
+              <li data-month="10">November</li>
+              <li data-month="11">December</li>
+            </ul>
+          </div>
+        </div>
+        <div class="calendar-body" id="calendar-body"></div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
